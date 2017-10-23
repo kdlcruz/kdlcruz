@@ -1,0 +1,35 @@
+machine:
+  node:
+    version: 6.2.2
+  python:
+    version: 2.7
+
+dependencies:
+  cache_directories:
+    - ~/google-cloud-sdk
+  pre:
+    - if [ ! -d ~/google-cloud-sdk ]; then curl https://sdk.cloud.google.com | bash; fi:
+        environment:
+          CLOUDSDK_CORE_DISABLE_PROMPTS: 1
+    - ~/google-cloud-sdk/bin/gcloud --quiet components update app
+    - ~/google-cloud-sdk/bin/gcloud auth activate-service-account --key-file .gcloud-key-file.json
+    - ~/google-cloud-sdk/bin/gcloud config set project kdlcruz-183808
+
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - npm run build && ~/google-cloud-sdk/bin/gcloud --quiet app deploy app.yaml --promote
+  staging:
+    branch: staging
+    commands:
+      - npm run build && ~/google-cloud-sdk/bin/gcloud --quiet app deploy app.yaml --no-promote --version=staging
+  feature:
+    branch: /feature\/.*/
+    commands:
+      - npm run build && ~/google-cloud-sdk/bin/gcloud --quiet app deploy app.yaml --no-promote --version="$(echo $CIRCLE_BRANCH | sed 's/feature\//f-/')"
+  hotfix:
+    branch: /hotfix\/.*/
+    commands:
+      - npm run build && ~/google-cloud-sdk/bin/gcloud --quiet app deploy app.yaml --no-promote --version="$(echo $CIRCLE_BRANCH | sed 's/hotfix\//h-/')"
