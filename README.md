@@ -4,7 +4,7 @@
 
 ## Get Started
 
-1. Pull repo. `git clone git@github.com:kdlcruz/stitao.git`
+1. Pull repo. `git clone git@github.com:kdlcruz/kdlcruz.git`
 2. Go to project. `cd stitao`
 3. Install modules. `npm install`
 4. Start project. `npm start`
