@@ -18,12 +18,12 @@ A PR back to `staging` should be created right away and prefixed with `[WIP]` so
 These features and hotfix branches will be automatically deployed to their own isolated QA environment when push into GitHub. For example:
 
 #### branch name is `feature/add-new-functionality`
-#### isolated QA should be `https://f-add-new-functionality.kdlcruz.com`
+#### isolated QA should be `https://f-add-new-functionalitydot-kdlcruz-183808.appspot.com`
 
 #### branch name is `hotfix/fixup-bug`
-#### isolated QA should be `https://h-fixup-bug.kdlcruz.com`
+#### isolated QA should be `https://h-fixup-bugdot-kdlcruz-183808.appspot.com`
 
-All merges into `staging` will be automatically deployed to our staging environment at [https://staging.kdlcruz.com/](https://staging.kdlcruz.com/)
+All merges into `staging` will be automatically deployed to our staging environment at [https://staging-dot-kdlcruz-183808.appspot.com/](https://staging-dot-kdlcruz-183808.appspot.com/)
 
 > All branch name should be stricted to Alphabet, number and hyphen.
 

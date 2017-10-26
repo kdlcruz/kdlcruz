@@ -12,6 +12,7 @@ dependencies:
         environment:
           CLOUDSDK_CORE_DISABLE_PROMPTS: 1
     - ~/google-cloud-sdk/bin/gcloud --quiet components update app
+    - echo $gcloud_credentials > .gcloud-key-file.json
     - ~/google-cloud-sdk/bin/gcloud auth activate-service-account --key-file .gcloud-key-file.json
     - ~/google-cloud-sdk/bin/gcloud config set project kdlcruz-183808
 

@@ -14,6 +14,10 @@ class App extends Component {
         <p className="App-intro">
           Good things are coming here, check back soon!
         </p>
+        <br />
+        <p>
+          This should be on staging
+        </p>
       </div>
     )
   }
