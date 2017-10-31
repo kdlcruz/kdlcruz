@@ -1,0 +1,26 @@
+body {
+  background-color: #EFEFEF;
+}
+
+#module {
+  background-color: #fff;
+}
+
+.mainMenu a:hover, .mainMenu button:hover {
+  background-color: #CC5556;
+}
+
+.mainMenu label {
+  cursor: pointer;
+}
+
+.meLinks {
+  text-align: center;
+  padding: 10px;
+  border-radius: 0px 0px 15px 15px;
+  background-color: #fff;
+}
+
+.meLinks a span:hover {
+  background-color: #CC5556;
+}
