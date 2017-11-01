@@ -3,7 +3,7 @@ import Divider from 'material-ui/Divider'
 
 import Work from '../Components/Work'
 
-class About extends Component {
+class Portfolio extends Component {
   render() {
     return (
       <div>
@@ -32,4 +32,4 @@ class About extends Component {
   }
 }
 
-export default About
+export default Portfolio

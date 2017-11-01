@@ -43,3 +43,20 @@ h2, label, p, h3 {
   margin-bottom: 10px;
   display: block;
 }
+
+.contact-content table {
+  width: 100%;
+}
+
+.contact-content table tr {
+  background-color: #EFEFEF;
+}
+
+.contact-content table tr td {
+  padding: 5px;
+}
+
+.contact-content table tr td.fieldName {
+  background-color: #fff;
+  border: 1px solid #EFEFEF;
+}

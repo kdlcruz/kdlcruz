@@ -16,7 +16,7 @@ import ciSkills from '../Data/ci-cd-skills'
 import testSkills from '../Data/test-skills'
 
 
-class About extends Component {
+class Skills extends Component {
   render() {
 
     return (
@@ -60,4 +60,4 @@ class About extends Component {
   }
 }
 
-export default About
+export default Skills

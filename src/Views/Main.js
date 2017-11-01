@@ -11,6 +11,7 @@ import {
 
 import Skills from './Skills'
 import Portfolio from './Portfolio'
+import Contact from './Contact'
 import Avatar from '../Components/Avatar'
 import Button from '../Components/Button'
 import FontAwesome from '../Components/FontAwesome'
@@ -24,7 +25,7 @@ class Main extends Component {
           <div className="mainMenu">
             <Button color="primary" txt="SKILLS" component={Link} to="/" icon={PermIdentity}/>
             <Button color="primary" txt="PORTFOLIO" component={Link} to="/portfolio" icon={Work}/>
-            <Button color="primary" txt="CONTACT" icon={PermPhoneMsg}/>
+            <Button color="primary" txt="CONTACT" component={Link} to="/contact" icon={PermPhoneMsg}/>
           </div>
           <div className="meLinks">
             <label>Tools are used for solved problems.</label>
@@ -36,6 +37,7 @@ class Main extends Component {
           <Switch>
             <Route exact path="/" component={Skills} />
             <Route exact path="/portfolio" component={Portfolio} />
+            <Route exact path="/contact" component={Contact} />
           </Switch>
         </Grid>
       </Grid>
