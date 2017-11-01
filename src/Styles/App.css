@@ -1,0 +1,62 @@
+body {
+  background-color: #EFEFEF;
+  font-family: proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif
+}
+
+h1, h2, h3 {
+  margin: 5px 0px;
+  font-weight: 500;
+}
+
+h2, label, p, h3 {
+  color: #AAA;
+}
+
+#module {
+  background-color: #fff;
+  padding: 25px;
+
+}
+
+.mainMenu a:hover, .mainMenu button:hover {
+  background-color: #CC5556;
+}
+
+.mainMenu label {
+  cursor: pointer;
+}
+
+.meLinks {
+  text-align: center;
+  padding: 10px;
+  border-radius: 0px 0px 15px 15px;
+  background-color: #fff;
+}
+
+.meLinks a span:hover {
+  background-color: #CC5556;
+}
+
+.meLinks label {
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.contact-content table {
+  width: 100%;
+}
+
+.contact-content table tr {
+  background-color: #EFEFEF;
+}
+
+.contact-content table tr td {
+  padding: 5px;
+}
+
+.contact-content table tr td.fieldName {
+  background-color: #fff;
+  border: 1px solid #EFEFEF;
+}
