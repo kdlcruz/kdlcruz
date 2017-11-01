@@ -15,9 +15,9 @@ const AvatarComponent = (props) => {
   const low = 50
 
   let strokeColor = '#32383E'
-  if (parseInt(props.percent) > high) {
+  if (parseInt(props.percent, 10) > high) {
     strokeColor = '#009C75'
-  } else if (parseInt(props.percent) < low) {
+  } else if (parseInt(props.percent, 10) < low) {
     strokeColor = '#D35154'
   }
 
