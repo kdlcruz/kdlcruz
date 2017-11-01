@@ -14,9 +14,9 @@ class App extends Component {
       <Router>
         <Grid container spacing={24}>
           <Hidden smDown>
-            <Grid item md={1}/>
-            <Grid item md={10}><Main/></Grid>
-            <Grid item md={1}/>
+            <Grid item md={1} />
+            <Grid item md={10}><Main /></Grid>
+            <Grid item md={1} />
           </Hidden>
         </Grid>
       </Router>

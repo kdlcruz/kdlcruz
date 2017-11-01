@@ -9,7 +9,7 @@ import {
   Switch
 } from 'react-router-dom'
 
-import About from './About'
+import Skills from './Skills'
 import Portfolio from './Portfolio'
 import Avatar from '../Components/Avatar'
 import Button from '../Components/Button'
@@ -27,14 +27,14 @@ class Main extends Component {
             <Button color="primary" txt="CONTACT" icon={PermPhoneMsg}/>
           </div>
           <div className="meLinks">
+            <label>Tools are used for solved problems.</label>
             <FontAwesome name="stack-overflow" href="https://stackoverflow.com/users/2148468/kdlcruz"/>
             <FontAwesome name="github" href="https://github.com/kdlcruz"/>
-            <FontAwesome name="facebook" href="https://www.facebook.com/yajnivek"/>
           </div>
         </Grid>
         <Grid item md={9} id="module">
           <Switch>
-            <Route exact path="/" component={About} />
+            <Route exact path="/" component={Skills} />
             <Route exact path="/portfolio" component={Portfolio} />
           </Switch>
         </Grid>

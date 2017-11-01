@@ -1,12 +1,20 @@
 {
-  "extends": ["react-app", "walmart/configurations/es6-react"],
+  "extends": [
+    "react-app",
+    "walmart/configurations/es6-react",
+    "prettier",
+    "prettier/react"
+  ],
   "rules": {
+    "react/wrap-multilines": "off",
     "quotes": ["error", "single"],
     "semi": ["error", "never"],
     "new-cap": "off",
     "no-invalid-this": "off",
     "filenames/match-regex": "off",
     "consistent-return": "off",
-    "valid-jsdoc": "off"
+    "valid-jsdoc": "off",
+    "jsx-a11y/href-no-hash": "off",
+    "jsx-a11y/anchor-is-valid": ["warn", { "aspects": ["invalidHref"] }]
   }
 }
