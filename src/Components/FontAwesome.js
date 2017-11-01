@@ -20,7 +20,7 @@ const styles = {
   }
 }
 
-const AvatarComponent = (props) => {
+const FontAwesomeComponent = (props) => {
   const { classes } = props
   if (props.href) {
     return (
@@ -33,10 +33,10 @@ const AvatarComponent = (props) => {
   }
 }
 
-AvatarComponent.propTypes = {
+FontAwesomeComponent.propTypes = {
   classes: PropTypes.object.isRequired,
   name: PropTypes.string.isRequired,
   href: PropTypes.string
 }
 
-export default withStyles(styles)(AvatarComponent)
+export default withStyles(styles)(FontAwesomeComponent)

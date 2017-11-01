@@ -12,7 +12,7 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <Grid container spacing={24}>
+        <Grid container spacing={24} style={{ width: '100%', margin: '0px' }}>
           <Hidden smDown>
             <Grid item md={1} />
             <Grid item md={10}><Main /></Grid>

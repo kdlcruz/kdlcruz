@@ -18,7 +18,7 @@ const styles = {
   }
 }
 
-const AvatarComponent = (props) => {
+const MyToolsComponent = (props) => {
   const { classes } = props
 
   const lineEl = []
@@ -40,10 +40,10 @@ const AvatarComponent = (props) => {
   )
 }
 
-AvatarComponent.propTypes = {
+MyToolsComponent.propTypes = {
   classes: PropTypes.object.isRequired,
   title: PropTypes.string.isRequired,
   data: PropTypes.object.isRequired
 }
 
-export default withStyles(styles)(AvatarComponent)
+export default withStyles(styles)(MyToolsComponent)

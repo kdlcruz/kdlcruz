@@ -13,6 +13,7 @@ import microSkills from '../Data/micro-skills'
 import localSkills from '../Data/local-skills'
 import osSkills from '../Data/os-skills'
 import ciSkills from '../Data/ci-cd-skills'
+import testSkills from '../Data/test-skills'
 
 
 class About extends Component {
@@ -42,11 +43,15 @@ class About extends Component {
           </Grid>
           <Grid item md={12}>
             <MyTools title="CI/CD" data={ciSkills}/>
+            <MyTools title="Microservices" data={microSkills}/>
+            
+          </Grid>
+          <Grid item md={12}>
+            <MyTools title="Testing Libraries" data={testSkills}/>
             <MyTools title="Local Developement" data={localSkills}/>
           </Grid>
           <Grid item md={12}>
             <MyTools title="OS preference" data={osSkills}/>
-            <MyTools title="Microservices" data={microSkills}/>
           </Grid>
         </Grid>
         

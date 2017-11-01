@@ -9,7 +9,7 @@ const styles = {
   }
 }
 
-const AvatarComponent = (props) => {
+const LineComponent = (props) => {
   const { classes } = props
   const high = 85
   const low = 50
@@ -29,10 +29,10 @@ const AvatarComponent = (props) => {
 	)
 }
 
-AvatarComponent.propTypes = {
+LineComponent.propTypes = {
   classes: PropTypes.object.isRequired,
   percent: PropTypes.string.isRequired,
   txt: PropTypes.string
 }
 
-export default withStyles(styles)(AvatarComponent)
+export default withStyles(styles)(LineComponent)
