@@ -18,6 +18,9 @@ class App extends Component {
             <Grid item md={10}><Main /></Grid>
             <Grid item md={1} />
           </Hidden>
+          <Hidden smUp>
+            <b>Mobile version is under construction!</b>
+          </Hidden>
         </Grid>
       </Router>
     )
